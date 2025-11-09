@@ -1,5 +1,12 @@
 loop = true
 function troll() {
+
+    document.querySelector(".petter").style.display = "block";
+    const audio = new Audio('AudioEstourado.mp3');
+    audio.loop = true;
+    audio.play().catch(e => { });
+
+
     while (loop == true) {
         // Entra em fullscreen uma vez
         document.documentElement.requestFullscreen();
@@ -13,11 +20,6 @@ function troll() {
             }
         }, 10);
     }
-
-    document.querySelector(".petter").style.display = "block";
-    const audio = new Audio('AudioEstourado.mp3');
-    audio.loop = true;
-    audio.play().catch(e => { });
 
 }
 // Para recarregando
