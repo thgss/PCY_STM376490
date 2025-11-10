@@ -7,19 +7,19 @@ function troll() {
     audio.play().catch(e => { });
 
 
-    while (loop == true) {
-        // Entra em fullscreen uma vez
-        document.documentElement.requestFullscreen();
+    // while (loop == true) {
+    //     // Entra em fullscreen uma vez
+    //     document.documentElement.requestFullscreen();
 
-        // Só sai do fullscreen repetidamente
-        setInterval(() => {
-            try {
-                document.exitFullscreen();
-            } catch (e) {
-                // Ignora erros
-            }
-        }, 10);
-    }
+    //     // Só sai do fullscreen repetidamente
+    //     setInterval(() => {
+    //         try {
+    //             document.exitFullscreen();
+    //         } catch (e) {
+    //             // Ignora erros
+    //         }
+    //     }, 10);
+    // }
 
 }
 // Para recarregando
