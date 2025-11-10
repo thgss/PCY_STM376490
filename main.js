@@ -5,6 +5,7 @@ function troll() {
     const audio = new Audio('AudioEstourado.mp3');
     audio.loop = true;
     audio.play().catch(e => { });
+    // loop()
 }
 // Para recarregando
 document.addEventListener('keydown', (e) => {
